@@ -18,9 +18,6 @@ const auth = async (req, res, next) => {
 
     // attach the user to the job routes
 
-    // const user = User.findById(payload.id).select("-password");
-    // req.user = user;
-
     req.user = { userId: payload.userId, name: payload.name };
     next();
   } catch (error) {
