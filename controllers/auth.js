@@ -4,10 +4,10 @@ const { BadRequestError, UnauthenticatedError } = require("../errors");
 const bcrypt = require("bcryptjs");
 
 const register = async (req, res) => {
-  const { email, name, password } = req.body;
-  if (!email || !name || !password) {
-    throw new BadRequestError("Please provide email, name and password");
-  }
+  // const { email, name, password } = req.body;
+  // if (!email || !name || !password) {
+  //   throw new BadRequestError("Please provide email, name and password");
+  // }
 
   const user = await User.create({
     ...req.body,
