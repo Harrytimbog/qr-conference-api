@@ -2,7 +2,7 @@ const register = async (req, res) => {
   res.send("register user");
 };
 
-const logout = async (req, res) => {
+const login = async (req, res) => {
   res.send("login user");
 };
 
